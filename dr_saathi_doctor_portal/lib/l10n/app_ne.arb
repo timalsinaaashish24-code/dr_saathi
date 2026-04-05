@@ -1,0 +1,759 @@
+{
+  "@@locale": "ne",
+  "appTitle": "डाक्टर साथी",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "helloWorld": "नमस्कार संसार!",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+  "welcome": "डाक्टर साथीमा तपाईंलाई स्वागत छ",
+  "@welcome": {
+    "description": "Welcome message for users"
+  },
+  "home": "होम",
+  "@home": {
+    "description": "Home tab label"
+  },
+  "settings": "सेटिङहरू",
+  "@settings": {
+    "description": "Settings tab label"
+  },
+  "profile": "प्रोफाइल",
+  "@profile": {
+    "description": "Profile tab label"
+  },
+  "login": "लगइन",
+  "@login": {
+    "description": "Login button text"
+  },
+  "logout": "लगआउट",
+  "@logout": {
+    "description": "Logout button text"
+  },
+  "email": "इमेल",
+  "@email": {
+    "description": "Email field label"
+  },
+  "password": "पासवर्ड",
+  "@password": {
+    "description": "Password field label"
+  },
+  "patientRegistration": "बिरामी दर्ता",
+  "@patientRegistration": {
+    "description": "Patient registration page title"
+  },
+  "firstName": "पहिलो नाम",
+  "@firstName": {
+    "description": "First name field label"
+  },
+  "lastName": "थर",
+  "@lastName": {
+    "description": "Last name field label"
+  },
+  "age": "उमेर",
+  "@age": {
+    "description": "Age field label"
+  },
+  "phoneNumber": "फोन नम्बर",
+  "@phoneNumber": {
+    "description": "Phone number field label"
+  },
+  "address": "ठेगाना",
+  "@address": {
+    "description": "Address field label"
+  },
+  "emergencyContact": "सेवा सम्पर्क",
+  "@emergencyContact": {
+    "description": "Emergency contact field label"
+  },
+  "medicalHistory": "चिकित्सा इतिहास",
+  "@medicalHistory": {
+    "description": "Medical history field label"
+  },
+  "allergies": "एलर्जी",
+  "@allergies": {
+    "description": "Allergies field label"
+  },
+  "register": "दर्ता गर्नुहोस्",
+  "@register": {
+    "description": "Register button text"
+  },
+  "cancel": "रद्द गर्नुहोस्",
+  "@cancel": {
+    "description": "Cancel button text"
+  },
+  "offlineMode": "अफलाइन मोड",
+  "@offlineMode": {
+    "description": "Offline mode indicator"
+  },
+  "syncPending": "सिङ्क पेन्डिङ",
+  "@syncPending": {
+    "description": "Sync pending status"
+  },
+  "patientRegistered": "बिरामी सफलतापूर्वक दर्ता भयो!",
+  "@patientRegistered": {
+    "description": "Patient registration success message"
+  },
+  "requiredField": "यो फील्ड आवश्यक छ",
+  "@requiredField": {
+    "description": "Required field validation message"
+  },
+  "invalidPhoneNumber": "कृपया वैध फोन नम्बर राख्नुहोस्",
+  "@invalidPhoneNumber": {
+    "description": "Invalid phone number validation message"
+  },
+  "invalidAge": "कृपया वैध उमेर राख्नुहोस्",
+  "@invalidAge": {
+    "description": "Invalid age validation message"
+  },
+  "patients": "बिरामीहरू",
+  "@patients": {
+    "description": "Patients list page title"
+  },
+  "editPatient": "बिरामी सम्पादन गर्नुहोस्",
+  "@editPatient": {
+    "description": "Edit patient page title"
+  },
+  "patientUpdated": "बिरामी सफलतापूर्वक सम्पादन गरियो!",
+  "@patientUpdated": {
+    "description": "Patient update success message"
+  },
+  "update": "अपडेट गर्नुहोस्",
+  "@update": {
+    "description": "Update button text"
+  },
+  "view": "हेर्नुहोस्",
+  "@view": {
+    "description": "View menu item"
+  },
+  "edit": "सम्पादन",
+  "@edit": {
+    "description": "Edit menu item"
+  },
+  "delete": "मेटाउनुहोस्",
+  "@delete": {
+    "description": "Delete menu item"
+  },
+  "confirmDelete": "मेटाउने पुष्टि गर्नुहोस्",
+  "@confirmDelete": {
+    "description": "Confirm delete dialog title"
+  },
+  "searchPatients": "बिरामीहरू खोज्नुहोस्",
+  "@searchPatients": {
+    "description": "Search patients placeholder"
+  },
+  "noResults": "कुनै बिरामी फेला परेनन्",
+  "@noResults": {
+    "description": "No search results message"
+  },
+  "noPatients": "अहिले सम्म कुनै बिरामी दर्ता भएको छैन",
+  "@noPatients": {
+    "description": "No patients message"
+  },
+  "personalInformation": "व्यक्तिगत जानकारी",
+  "@personalInformation": {
+    "description": "Personal information section title"
+  },
+  "medicalInformation": "चिकित्सा जानकारी",
+  "@medicalInformation": {
+    "description": "Medical information section title"
+  },
+  "smsReminder": "SMS सम्झना",
+  "@smsReminder": {
+    "description": "SMS reminder page title"
+  },
+  "smsReminders": "SMS सम्झनामक",
+  "@smsReminders": {
+    "description": "SMS reminders list page title"
+  },
+  "sendSms": "SMS भेज्नुहोस्",
+  "@sendSms": {
+    "description": "Send SMS button text"
+  },
+  "scheduleSms": "SMS अनुसूची बनाउनुहोस्",
+  "@scheduleSms": {
+    "description": "Schedule SMS button text"
+  },
+  "sendImmediately": "तुरुन्त पठाउनुहोस्",
+  "@sendImmediately": {
+    "description": "Send immediately option"
+  },
+  "messageTemplate": "सन्देश टेम्प्लेट",
+  "@messageTemplate": {
+    "description": "Message template label"
+  },
+  "reminderType": "सम्झना प्रकार",
+  "@reminderType": {
+    "description": "Reminder type label"
+  },
+  "appointmentReminder": "अपोइन्टमेन्ट सम्झना",
+  "@appointmentReminder": {
+    "description": "Appointment reminder type"
+  },
+  "medicationReminder": "औषधि सम्झना",
+  "@medicationReminder": {
+    "description": "Medication reminder type"
+  },
+  "followUpReminder": "फलो-अप सम्झना",
+  "@followUpReminder": {
+    "description": "Follow-up reminder type"
+  },
+  "generalReminder": "सामान्य सम्झना",
+  "@generalReminder": {
+    "description": "General reminder type"
+  },
+  "symptomChecker": "लक्षण जाँच",
+  "@symptomChecker": {
+    "description": "Symptom checker button text"
+  },
+  "findDoctors": "डाक्टरहरू खोज्नुहोस्",
+  "@findDoctors": {
+    "description": "Find doctors button text"
+  },
+  "emergencyServices": "आकस्मिक सेवा",
+  "@emergencyServices": {
+    "description": "Emergency services button text"
+  },
+  "doctorPortal": "डाक्टर पोर्टल",
+  "@doctorPortal": {
+    "description": "Doctor portal button text"
+  },
+  "registerPatient": "बिरामी दर्ता गर्नुहोस्",
+  "@registerPatient": {
+    "description": "Register patient menu item"
+  },
+  "addNewPatientInformation": "नयाँ बिरामीको जानकारी थप्नुहोस्",
+  "@addNewPatientInformation": {
+    "description": "Add new patient information subtitle"
+  },
+  "language": "भाषा",
+  "@language": {
+    "description": "Language menu item"
+  },
+  "changeAppLanguage": "एप्प भाषा बदल्नुहोस्",
+  "@changeAppLanguage": {
+    "description": "Change app language subtitle"
+  },
+  "audio": "अडियो",
+  "@audio": {
+    "description": "Audio menu item"
+  },
+  "soundAndNotificationSettings": "ध्वनि र सूचना सेटिङहरू",
+  "@soundAndNotificationSettings": {
+    "description": "Sound and notification settings subtitle"
+  },
+  "patientList": "बिरामीहरूको सूची",
+  "@patientList": {
+    "description": "Patient list menu item"
+  },
+  "viewAndManagePatients": "बिरामीहरू हेर्नुहोस् र व्यवस्थापन गर्नुहोस्",
+  "@viewAndManagePatients": {
+    "description": "View and manage patients subtitle"
+  },
+  "smsRemindersMenu": "SMS सम्झनाहरू",
+  "@smsRemindersMenu": {
+    "description": "SMS reminders menu item"
+  },
+  "manageSmsReminders": "SMS सम्झनाहरू व्यवस्थापन गर्नुहोस्",
+  "@manageSmsReminders": {
+    "description": "Manage SMS reminders subtitle"
+  },
+  "prescriptions": "प्रेस्क्रिप्शनहरू",
+  "@prescriptions": {
+    "description": "Prescriptions menu item"
+  },
+  "viewPrescriptions": "प्रेस्क्रिप्शनहरू हेर्नुहोस्",
+  "@viewPrescriptions": {
+    "description": "View prescriptions subtitle"
+  },
+  "dataSync": "डाटा सिङ्क",
+  "@dataSync": {
+    "description": "Data sync menu item"
+  },
+  "syncWithCloud": "क्लाउडसँग सिङ्क गर्नुहोस्",
+  "@syncWithCloud": {
+    "description": "Sync with cloud subtitle"
+  },
+  "about": "बारेमा",
+  "@about": {
+    "description": "About menu item"
+  },
+  "appInformationAndVersion": "एप्प जानकारी र संस्करण",
+  "@appInformationAndVersion": {
+    "description": "App information and version subtitle"
+  },
+  "help": "सहायता",
+  "@help": {
+    "description": "Help menu item"
+  },
+  "getHelpAndSupport": "सहायता र समर्थन पाउनुहोस्",
+  "@getHelpAndSupport": {
+    "description": "Get help and support subtitle"
+  },
+  "contactUs": "हामीलाई सम्पर्क गर्नुहोस्",
+  "@contactUs": {
+    "description": "Contact us menu item"
+  },
+  "reachOutForSupport": "समर्थनको लागि सम्पर्क गर्नुहोस्",
+  "@reachOutForSupport": {
+    "description": "Reach out for support subtitle"
+  },
+  "chooseFromGallery": "ग्यालेरीबाट छान्नुहोस्",
+  "@chooseFromGallery": {
+    "description": "Choose from gallery option"
+  },
+  "takeAPhoto": "फोटो खिच्नुहोस्",
+  "@takeAPhoto": {
+    "description": "Take a photo option"
+  },
+  "removePhoto": "फोटो हटाउनुहोस्",
+  "@removePhoto": {
+    "description": "Remove photo option"
+  },
+  "editName": "नाम सम्पादन गर्नुहोस्",
+  "@editName": {
+    "description": "Edit name dialog title"
+  },
+  "yourName": "तपाईंको नाम",
+  "@yourName": {
+    "description": "Your name field label"
+  },
+  "save": "बचत गर्नुहोस्",
+  "@save": {
+    "description": "Save button text"
+  },
+  "close": "बन्द गर्नुहोस्",
+  "@close": {
+    "description": "Close button text"
+  },
+  "selectLanguage": "भाषा छान्नुहोस्",
+  "@selectLanguage": {
+    "description": "Select language dialog title"
+  },
+  "english": "अंग्रेजी",
+  "@english": {
+    "description": "English language option"
+  },
+  "nepali": "नेपाली",
+  "@nepali": {
+    "description": "Nepali language option"
+  },
+  "manageHealthProfile": "आफ्नो स्वास्थ्य प्रोफाइल व्यवस्थापन गर्नुहोस्",
+  "@manageHealthProfile": {
+    "description": "Manage your health profile text"
+  },
+  "viewAndManagePrescriptions": "प्रेस्क्रिप्शनहरू हेर्नुहोस् र व्यवस्थापन गर्नुहोस्",
+  "@viewAndManagePrescriptions": {
+    "description": "View and manage prescriptions subtitle"
+  },
+  "healthRecords": "स्वास्थ्य रेकर्डहरू",
+  "@healthRecords": {
+    "description": "Health records menu item"
+  },
+  "accessPatientHealthRecords": "बिरामीको स्वास्थ्य रेकर्डहरू पहुँच गर्नुहोस्",
+  "@accessPatientHealthRecords": {
+    "description": "Access patient health records subtitle"
+  },
+  "languageChoice": "भाषा छनोट",
+  "@languageChoice": {
+    "description": "Language choice menu item"
+  },
+  "notifications": "सूचनाहरू",
+  "@notifications": {
+    "description": "Notifications menu item"
+  },
+  "notificationPreferences": "सूचना प्राथमिकताहरू",
+  "@notificationPreferences": {
+    "description": "Notification preferences subtitle"
+  },
+  "resources": "स्रोतहरू",
+  "@resources": {
+    "description": "Resources menu item"
+  },
+  "healthResourcesAndInformation": "स्वास्थ्य स्रोत र जानकारी",
+  "@healthResourcesAndInformation": {
+    "description": "Health resources and information subtitle"
+  },
+  "privacySettings": "गोपनीयता सेटिङहरू",
+  "@privacySettings": {
+    "description": "Privacy settings menu item"
+  },
+  "controlYourPrivacy": "आफ्नो गोपनीयता नियन्त्रण गर्नुहोस्",
+  "@controlYourPrivacy": {
+    "description": "Control your privacy subtitle"
+  },
+  "helpAndSupport": "सहायता र समर्थन",
+  "@helpAndSupport": {
+    "description": "Help and support menu item"
+  },
+  "chooseLanguage": "भाषा छान्नुहोस्",
+  "@chooseLanguage": {
+    "description": "Choose language dialog title"
+  },
+  "emergencyServicesTitle": "आकस्मिक सेवा",
+  "@emergencyServicesTitle": {
+    "description": "Emergency services screen title"
+  },
+  "emergencyAlert": "जीवनलाई खतरा पुग्ने सेवा अवस्थामा तुरुन्त १०२ मा फोन गर्नुहोस्",
+  "@emergencyAlert": {
+    "description": "Emergency alert message"
+  },
+  "call102": "१०२ मा कल गर्नुहोस्",
+  "@call102": {
+    "description": "Call 102 button text"
+  },
+  "call100": "१०० मा कल गर्नुहोस्",
+  "@call100": {
+    "description": "Call 100 button text"
+  },
+  "filterAll": "सबै",
+  "@filterAll": {
+    "description": "All filter option"
+  },
+  "filterAmbulance": "एम्बुलेन्स",
+  "@filterAmbulance": {
+    "description": "Ambulance filter option"
+  },
+  "filterPolice": "प्रहरी",
+  "@filterPolice": {
+    "description": "Police filter option"
+  },
+  "filterFireService": "दमकल सेवा",
+  "@filterFireService": {
+    "description": "Fire service filter option"
+  },
+  "filterMedicalEmergency": "चिकित्सा सेवा",
+  "@filterMedicalEmergency": {
+    "description": "Medical emergency filter option"
+  },
+  "gettingLocation": "तपाईंको स्थान पत्ता लगाउँदै...",
+  "@gettingLocation": {
+    "description": "Location loading message"
+  },
+  "available247": "२४/७",
+  "@available247": {
+    "description": "24/7 availability indicator"
+  },
+  "callButton": "फोन गर्नुहोस्",
+  "@callButton": {
+    "description": "Call button text"
+  },
+  "whatsappButton": "व्हाट्सएप",
+  "@whatsappButton": {
+    "description": "WhatsApp button text"
+  },
+  "alternateButton": "वैकल्पिक",
+  "@alternateButton": {
+    "description": "Alternate number button text"
+  },
+  "metersAway": "मिटर टाढा",
+  "@metersAway": {
+    "description": "Meters away distance format"
+  },
+  "kilometersAway": "किमी टाढा",
+  "@kilometersAway": {
+    "description": "Kilometers away distance format"
+  },
+  "couldNotLaunchPhone": "फोन डायलर खोल्न सकिएन",
+  "@couldNotLaunchPhone": {
+    "description": "Phone launch error message"
+  },
+  "couldNotLaunchWhatsApp": "व्हाट्सएप खोल्न सकिएन",
+  "@couldNotLaunchWhatsApp": {
+    "description": "WhatsApp launch error message"
+  },
+  "whatsappMessage": "नमस्कार, मलाई सेवा सहायता चाहिन्छ।",
+  "@whatsappMessage": {
+    "description": "Default WhatsApp emergency message"
+  },
+  "chooseYourPlan": "आफ्नो योजना छान्नुहोस्",
+  "@chooseYourPlan": {
+    "description": "Pricing screen title"
+  },
+  "doctorPromotionalOffer": "डाक्टर प्रमोशनल अफर",
+  "@doctorPromotionalOffer": {
+    "description": "Promotional offer header"
+  },
+  "specialLaunchPricing": "प्रारम्भिक प्रयोगकर्ताहरूका लागि विशेष लन्च मूल्य",
+  "@specialLaunchPricing": {
+    "description": "Special pricing subtitle"
+  },
+  "limitedTimeOffer": "सीमित समयको अफर",
+  "@limitedTimeOffer": {
+    "description": "Limited time offer badge"
+  },
+  "subscribeNow": "अहिले सदस्यता लिनुहोस्",
+  "@subscribeNow": {
+    "description": "Subscribe button text"
+  },
+  "selectAPlan": "योजना छान्नुहोस्",
+  "@selectAPlan": {
+    "description": "Select plan button text"
+  },
+  "popular": "लोकप्रिय",
+  "@popular": {
+    "description": "Popular tier badge"
+  },
+  "patients": "बिरामीहरू",
+  "@patients": {
+    "description": "Patients count text"
+  },
+  "perMonth": "प्रति महिना",
+  "@perMonth": {
+    "description": "Per month pricing text"
+  },
+  "confirmSubscription": "सदस्यता पुष्टि गर्नुहोस्",
+  "@confirmSubscription": {
+    "description": "Subscription confirmation dialog title"
+  },
+  "youHaveSelected": "तपाईंले {planName} योजना छान्नुभएको छ:",
+  "@youHaveSelected": {
+    "description": "Plan selection confirmation text",
+    "placeholders": {
+      "planName": {
+        "type": "String"
+      }
+    }
+  },
+  "upToPatients": "• {count} सम्म बिरामीहरू",
+  "@upToPatients": {
+    "description": "Patient count display",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pricingFormat": "• {currency} {price}/महिना",
+  "@pricingFormat": {
+    "description": "Pricing display format",
+    "placeholders": {
+      "currency": {
+        "type": "String"
+      },
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "promotionalOfferProceed": "यो प्रमोशनल अफर हो। के तपाईं अगाडि बढ्न चाहनुहुन्छ?",
+  "@promotionalOfferProceed": {
+    "description": "Promotional offer confirmation"
+  },
+  "confirm": "पुष्टि गर्नुहोस्",
+  "@confirm": {
+    "description": "Confirm button text"
+  },
+  "subscriptionActivated": "सदस्यता सक्रिय भयो!",
+  "@subscriptionActivated": {
+    "description": "Subscription activation success title"
+  },
+  "planActivatedSuccess": "तपाईंको {planName} योजना सफलतापूर्वक सक्रिय भएको छ!",
+  "@planActivatedSuccess": {
+    "description": "Plan activation success message",
+    "placeholders": {
+      "planName": {
+        "type": "String"
+      }
+    }
+  },
+  "canNowManagePatients": "तपाईं अब {count} सम्म बिरामीहरूको व्यवस्थापन गर्न सक्नुहुन्छ।",
+  "@canNowManagePatients": {
+    "description": "Patient management confirmation",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "great": "उत्कृष्ट!",
+  "@great": {
+    "description": "Great button text"
+  },
+  "subscription": "सदस्यता",
+  "@subscription": {
+    "description": "Subscription menu item"
+  },
+  "specialLaunchOffer": "विशेष लन्च अफर!",
+  "@specialLaunchOffer": {
+    "description": "Special launch offer text"
+  },
+  "getPremiumFeatures": "प्रमोशनल दरमा प्रिमियम सुविधाहरू पाउनुहोस्",
+  "@getPremiumFeatures": {
+    "description": "Premium features promotion text"
+  },
+  "viewPlans": "योजनाहरू हेर्नुहोस्",
+  "@viewPlans": {
+    "description": "View plans button text"
+  },
+  "billing": "बिलिङ",
+  "@billing": {
+    "description": "Billing menu item"
+  },
+  "createInvoice": "बिल बनाउनुहोस्",
+  "@createInvoice": {
+    "description": "Create invoice screen title"
+  },
+  "myInvoices": "मेरा बिलहरू",
+  "@myInvoices": {
+    "description": "Patient invoices screen title"
+  },
+  "selectPatient": "बिरामी छान्नुहोस्",
+  "@selectPatient": {
+    "description": "Select patient label"
+  },
+  "billingItems": "बिलिङ वस्तुहरू",
+  "@billingItems": {
+    "description": "Billing items section title"
+  },
+  "addItem": "वस्तु थप्नुहोस्",
+  "@addItem": {
+    "description": "Add item button text"
+  },
+  "noBillingItems": "अहिले सम्म कुनै बिलिङ वस्तु थपिएको छैन",
+  "@noBillingItems": {
+    "description": "No billing items message"
+  },
+  "taxSettings": "कर सेटिङहरू",
+  "@taxSettings": {
+    "description": "Tax settings section title"
+  },
+  "vatRate": "VAT दर (%)",
+  "@vatRate": {
+    "description": "VAT rate field label"
+  },
+  "additionalTax": "अतिरिक्त कर (%)",
+  "@additionalTax": {
+    "description": "Additional tax field label"
+  },
+  "paymentTerms": "भुक्तानी सर्त (दिनहरू)",
+  "@paymentTerms": {
+    "description": "Payment terms field label"
+  },
+  "notes": "टिप्पणीहरू",
+  "@notes": {
+    "description": "Notes section title"
+  },
+  "invoiceSummary": "बिल सारांश",
+  "@invoiceSummary": {
+    "description": "Invoice summary section title"
+  },
+  "subtotal": "उप-योग",
+  "@subtotal": {
+    "description": "Subtotal label"
+  },
+  "vat": "VAT",
+  "@vat": {
+    "description": "VAT label"
+  },
+  "totalAmount": "कुल रकम",
+  "@totalAmount": {
+    "description": "Total amount label"
+  },
+  "preview": "पूर्वावलोकन",
+  "@preview": {
+    "description": "Preview button text"
+  },
+  "sendInvoice": "बिल पठाउनुहोस्",
+  "@sendInvoice": {
+    "description": "Send invoice button text"
+  },
+  "addBillingItem": "बिलिङ वस्तु थप्नुहोस्",
+  "@addBillingItem": {
+    "description": "Add billing item dialog title"
+  },
+  "description": "विवरण",
+  "@description": {
+    "description": "Description field label"
+  },
+  "type": "प्रकार",
+  "@type": {
+    "description": "Type field label"
+  },
+  "quantity": "मात्रा",
+  "@quantity": {
+    "description": "Quantity field label"
+  },
+  "unitPrice": "एकाइ मूल्य (रु)",
+  "@unitPrice": {
+    "description": "Unit price field label"
+  },
+  "category": "श्रेणी",
+  "@category": {
+    "description": "Category field label"
+  },
+  "pending": "बाँकी",
+  "@pending": {
+    "description": "Pending status"
+  },
+  "paid": "भुक्तान गरिएको",
+  "@paid": {
+    "description": "Paid status"
+  },
+  "overdue": "समय सकिएको",
+  "@overdue": {
+    "description": "Overdue status"
+  },
+  "all": "सबै",
+  "@all": {
+    "description": "All filter option"
+  },
+  "total": "जम्मा",
+  "@total": {
+    "description": "Total label"
+  },
+  "amount": "रकम",
+  "@amount": {
+    "description": "Amount label"
+  },
+  "dueDate": "भुक्तान मिति",
+  "@dueDate": {
+    "description": "Due date label"
+  },
+  "viewDetails": "विवरण हेर्नुहोस्",
+  "@viewDetails": {
+    "description": "View details button text"
+  },
+  "markPaid": "भुक्तान गरिएको चिन्ह लगाउनुहोस्",
+  "@markPaid": {
+    "description": "Mark paid button text"
+  },
+  "markAsPaid": "भुक्तान गरिएको रूपमा चिन्ह लगाउनुहोस्",
+  "@markAsPaid": {
+    "description": "Mark as paid dialog title"
+  },
+  "paymentMethod": "भुक्तान विधि",
+  "@paymentMethod": {
+    "description": "Payment method label"
+  },
+  "paymentReference": "भुक्तान सन्दर्भ (वैकल्पिक)",
+  "@paymentReference": {
+    "description": "Payment reference field label"
+  },
+  "noInvoicesFound": "कुनै बिल फेला परेन",
+  "@noInvoicesFound": {
+    "description": "No invoices message"
+  },
+  "invoiceNumber": "बिल नम्बर",
+  "@invoiceNumber": {
+    "description": "Invoice number label"
+  },
+  "doctor": "डाक्टर",
+  "@doctor": {
+    "description": "Doctor label"
+  },
+  "date": "मिति",
+  "@date": {
+    "description": "Date label"
+  },
+  "status": "स्थिति",
+  "@status": {
+    "description": "Status label"
+  },
+  "items": "वस्तुहरू",
+  "@items": {
+    "description": "Items label"
+  }
+}

@@ -1,0 +1,759 @@
+{
+  "@@locale": "en",
+  "appTitle": "Dr. Saathi",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "helloWorld": "Hello World!",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+  "welcome": "Welcome to Dr. Saathi",
+  "@welcome": {
+    "description": "Welcome message for users"
+  },
+  "home": "Home",
+  "@home": {
+    "description": "Home tab label"
+  },
+  "settings": "Settings",
+  "@settings": {
+    "description": "Settings tab label"
+  },
+  "profile": "Profile",
+  "@profile": {
+    "description": "Profile tab label"
+  },
+  "login": "Login",
+  "@login": {
+    "description": "Login button text"
+  },
+  "logout": "Logout",
+  "@logout": {
+    "description": "Logout button text"
+  },
+  "email": "Email",
+  "@email": {
+    "description": "Email field label"
+  },
+  "password": "Password",
+  "@password": {
+    "description": "Password field label"
+  },
+  "patientRegistration": "Patient Registration",
+  "@patientRegistration": {
+    "description": "Patient registration page title"
+  },
+  "firstName": "First Name",
+  "@firstName": {
+    "description": "First name field label"
+  },
+  "lastName": "Last Name",
+  "@lastName": {
+    "description": "Last name field label"
+  },
+  "age": "Age",
+  "@age": {
+    "description": "Age field label"
+  },
+  "phoneNumber": "Phone Number",
+  "@phoneNumber": {
+    "description": "Phone number field label"
+  },
+  "address": "Address",
+  "@address": {
+    "description": "Address field label"
+  },
+  "emergencyContact": "Emergency Contact",
+  "@emergencyContact": {
+    "description": "Emergency contact field label"
+  },
+  "medicalHistory": "Medical History",
+  "@medicalHistory": {
+    "description": "Medical history field label"
+  },
+  "allergies": "Allergies",
+  "@allergies": {
+    "description": "Allergies field label"
+  },
+  "register": "Register",
+  "@register": {
+    "description": "Register button text"
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Cancel button text"
+  },
+  "offlineMode": "Offline Mode",
+  "@offlineMode": {
+    "description": "Offline mode indicator"
+  },
+  "syncPending": "Sync Pending",
+  "@syncPending": {
+    "description": "Sync pending status"
+  },
+  "patientRegistered": "Patient registered successfully!",
+  "@patientRegistered": {
+    "description": "Patient registration success message"
+  },
+  "requiredField": "This field is required",
+  "@requiredField": {
+    "description": "Required field validation message"
+  },
+  "invalidPhoneNumber": "Please enter a valid phone number",
+  "@invalidPhoneNumber": {
+    "description": "Invalid phone number validation message"
+  },
+  "invalidAge": "Please enter a valid age",
+  "@invalidAge": {
+    "description": "Invalid age validation message"
+  },
+  "patients": "Patients",
+  "@patients": {
+    "description": "Patients list page title"
+  },
+  "editPatient": "Edit Patient",
+  "@editPatient": {
+    "description": "Edit patient page title"
+  },
+  "patientUpdated": "Patient updated successfully!",
+  "@patientUpdated": {
+    "description": "Patient update success message"
+  },
+  "update": "Update",
+  "@update": {
+    "description": "Update button text"
+  },
+  "view": "View",
+  "@view": {
+    "description": "View menu item"
+  },
+  "edit": "Edit",
+  "@edit": {
+    "description": "Edit menu item"
+  },
+  "delete": "Delete",
+  "@delete": {
+    "description": "Delete menu item"
+  },
+  "confirmDelete": "Confirm Delete",
+  "@confirmDelete": {
+    "description": "Confirm delete dialog title"
+  },
+  "searchPatients": "Search Patients",
+  "@searchPatients": {
+    "description": "Search patients placeholder"
+  },
+  "noResults": "No patients found",
+  "@noResults": {
+    "description": "No search results message"
+  },
+  "noPatients": "No patients registered yet",
+  "@noPatients": {
+    "description": "No patients message"
+  },
+  "personalInformation": "Personal Information",
+  "@personalInformation": {
+    "description": "Personal information section title"
+  },
+  "medicalInformation": "Medical Information",
+  "@medicalInformation": {
+    "description": "Medical information section title"
+  },
+  "smsReminder": "SMS Reminder",
+  "@smsReminder": {
+    "description": "SMS reminder page title"
+  },
+  "smsReminders": "SMS Reminders",
+  "@smsReminders": {
+    "description": "SMS reminders list page title"
+  },
+  "sendSms": "Send SMS",
+  "@sendSms": {
+    "description": "Send SMS button text"
+  },
+  "scheduleSms": "Schedule SMS",
+  "@scheduleSms": {
+    "description": "Schedule SMS button text"
+  },
+  "sendImmediately": "Send Immediately",
+  "@sendImmediately": {
+    "description": "Send immediately option"
+  },
+  "messageTemplate": "Message Template",
+  "@messageTemplate": {
+    "description": "Message template label"
+  },
+  "reminderType": "Reminder Type",
+  "@reminderType": {
+    "description": "Reminder type label"
+  },
+  "appointmentReminder": "Appointment Reminder",
+  "@appointmentReminder": {
+    "description": "Appointment reminder type"
+  },
+  "medicationReminder": "Medication Reminder",
+  "@medicationReminder": {
+    "description": "Medication reminder type"
+  },
+  "followUpReminder": "Follow-up Reminder",
+  "@followUpReminder": {
+    "description": "Follow-up reminder type"
+  },
+  "generalReminder": "General Reminder",
+  "@generalReminder": {
+    "description": "General reminder type"
+  },
+  "symptomChecker": "Symptom Checker",
+  "@symptomChecker": {
+    "description": "Symptom checker button text"
+  },
+  "findDoctors": "Find Doctors",
+  "@findDoctors": {
+    "description": "Find doctors button text"
+  },
+  "emergencyServices": "Emergency Services",
+  "@emergencyServices": {
+    "description": "Emergency services button text"
+  },
+  "doctorPortal": "Doctor Portal",
+  "@doctorPortal": {
+    "description": "Doctor portal button text"
+  },
+  "registerPatient": "Register Patient",
+  "@registerPatient": {
+    "description": "Register patient menu item"
+  },
+  "addNewPatientInformation": "Add new patient information",
+  "@addNewPatientInformation": {
+    "description": "Add new patient information subtitle"
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Language menu item"
+  },
+  "changeAppLanguage": "Change app language",
+  "@changeAppLanguage": {
+    "description": "Change app language subtitle"
+  },
+  "audio": "Audio",
+  "@audio": {
+    "description": "Audio menu item"
+  },
+  "soundAndNotificationSettings": "Sound and notification settings",
+  "@soundAndNotificationSettings": {
+    "description": "Sound and notification settings subtitle"
+  },
+  "patientList": "Patient List",
+  "@patientList": {
+    "description": "Patient list menu item"
+  },
+  "viewAndManagePatients": "View and manage patients",
+  "@viewAndManagePatients": {
+    "description": "View and manage patients subtitle"
+  },
+  "smsRemindersMenu": "SMS Reminders",
+  "@smsRemindersMenu": {
+    "description": "SMS reminders menu item"
+  },
+  "manageSmsReminders": "Manage SMS reminders",
+  "@manageSmsReminders": {
+    "description": "Manage SMS reminders subtitle"
+  },
+  "prescriptions": "Prescriptions",
+  "@prescriptions": {
+    "description": "Prescriptions menu item"
+  },
+  "viewPrescriptions": "View prescriptions",
+  "@viewPrescriptions": {
+    "description": "View prescriptions subtitle"
+  },
+  "dataSync": "Data Sync",
+  "@dataSync": {
+    "description": "Data sync menu item"
+  },
+  "syncWithCloud": "Sync with cloud",
+  "@syncWithCloud": {
+    "description": "Sync with cloud subtitle"
+  },
+  "about": "About",
+  "@about": {
+    "description": "About menu item"
+  },
+  "appInformationAndVersion": "App information and version",
+  "@appInformationAndVersion": {
+    "description": "App information and version subtitle"
+  },
+  "help": "Help",
+  "@help": {
+    "description": "Help menu item"
+  },
+  "getHelpAndSupport": "Get help and support",
+  "@getHelpAndSupport": {
+    "description": "Get help and support subtitle"
+  },
+  "contactUs": "Contact Us",
+  "@contactUs": {
+    "description": "Contact us menu item"
+  },
+  "reachOutForSupport": "Reach out for support",
+  "@reachOutForSupport": {
+    "description": "Reach out for support subtitle"
+  },
+  "chooseFromGallery": "Choose from Gallery",
+  "@chooseFromGallery": {
+    "description": "Choose from gallery option"
+  },
+  "takeAPhoto": "Take a Photo",
+  "@takeAPhoto": {
+    "description": "Take a photo option"
+  },
+  "removePhoto": "Remove Photo",
+  "@removePhoto": {
+    "description": "Remove photo option"
+  },
+  "editName": "Edit Name",
+  "@editName": {
+    "description": "Edit name dialog title"
+  },
+  "yourName": "Your Name",
+  "@yourName": {
+    "description": "Your name field label"
+  },
+  "save": "Save",
+  "@save": {
+    "description": "Save button text"
+  },
+  "close": "Close",
+  "@close": {
+    "description": "Close button text"
+  },
+  "selectLanguage": "Select Language",
+  "@selectLanguage": {
+    "description": "Select language dialog title"
+  },
+  "english": "English",
+  "@english": {
+    "description": "English language option"
+  },
+  "nepali": "Nepali",
+  "@nepali": {
+    "description": "Nepali language option"
+  },
+  "manageHealthProfile": "Manage your health profile",
+  "@manageHealthProfile": {
+    "description": "Manage your health profile text"
+  },
+  "viewAndManagePrescriptions": "View and manage prescriptions",
+  "@viewAndManagePrescriptions": {
+    "description": "View and manage prescriptions subtitle"
+  },
+  "healthRecords": "Health Records",
+  "@healthRecords": {
+    "description": "Health records menu item"
+  },
+  "accessPatientHealthRecords": "Access patient health records",
+  "@accessPatientHealthRecords": {
+    "description": "Access patient health records subtitle"
+  },
+  "languageChoice": "Language Choice",
+  "@languageChoice": {
+    "description": "Language choice menu item"
+  },
+  "notifications": "Notifications",
+  "@notifications": {
+    "description": "Notifications menu item"
+  },
+  "notificationPreferences": "Notification preferences",
+  "@notificationPreferences": {
+    "description": "Notification preferences subtitle"
+  },
+  "resources": "Resources",
+  "@resources": {
+    "description": "Resources menu item"
+  },
+  "healthResourcesAndInformation": "Health resources and information",
+  "@healthResourcesAndInformation": {
+    "description": "Health resources and information subtitle"
+  },
+  "privacySettings": "Privacy Settings",
+  "@privacySettings": {
+    "description": "Privacy settings menu item"
+  },
+  "controlYourPrivacy": "Control your privacy",
+  "@controlYourPrivacy": {
+    "description": "Control your privacy subtitle"
+  },
+  "helpAndSupport": "Help & Support",
+  "@helpAndSupport": {
+    "description": "Help and support menu item"
+  },
+  "chooseLanguage": "Choose Language",
+  "@chooseLanguage": {
+    "description": "Choose language dialog title"
+  },
+  "emergencyServicesTitle": "Emergency Services",
+  "@emergencyServicesTitle": {
+    "description": "Emergency services screen title"
+  },
+  "emergencyAlert": "In case of life-threatening emergency, call 102 immediately",
+  "@emergencyAlert": {
+    "description": "Emergency alert message"
+  },
+  "call102": "Call 102",
+  "@call102": {
+    "description": "Call 102 button text"
+  },
+  "call100": "Call 100",
+  "@call100": {
+    "description": "Call 100 button text"
+  },
+  "filterAll": "All",
+  "@filterAll": {
+    "description": "All filter option"
+  },
+  "filterAmbulance": "Ambulance",
+  "@filterAmbulance": {
+    "description": "Ambulance filter option"
+  },
+  "filterPolice": "Police",
+  "@filterPolice": {
+    "description": "Police filter option"
+  },
+  "filterFireService": "Fire Service",
+  "@filterFireService": {
+    "description": "Fire service filter option"
+  },
+  "filterMedicalEmergency": "Medical Emergency",
+  "@filterMedicalEmergency": {
+    "description": "Medical emergency filter option"
+  },
+  "gettingLocation": "Getting your location...",
+  "@gettingLocation": {
+    "description": "Location loading message"
+  },
+  "available247": "24/7",
+  "@available247": {
+    "description": "24/7 availability indicator"
+  },
+  "callButton": "Call",
+  "@callButton": {
+    "description": "Call button text"
+  },
+  "whatsappButton": "WhatsApp",
+  "@whatsappButton": {
+    "description": "WhatsApp button text"
+  },
+  "alternateButton": "Alt",
+  "@alternateButton": {
+    "description": "Alternate number button text"
+  },
+  "metersAway": "m away",
+  "@metersAway": {
+    "description": "Meters away distance format"
+  },
+  "kilometersAway": "km away",
+  "@kilometersAway": {
+    "description": "Kilometers away distance format"
+  },
+  "couldNotLaunchPhone": "Could not launch phone dialer",
+  "@couldNotLaunchPhone": {
+    "description": "Phone launch error message"
+  },
+  "couldNotLaunchWhatsApp": "Could not launch WhatsApp",
+  "@couldNotLaunchWhatsApp": {
+    "description": "WhatsApp launch error message"
+  },
+  "whatsappMessage": "Hello, I need emergency assistance.",
+  "@whatsappMessage": {
+    "description": "Default WhatsApp emergency message"
+  },
+  "chooseYourPlan": "Choose Your Plan",
+  "@chooseYourPlan": {
+    "description": "Pricing screen title"
+  },
+  "doctorPromotionalOffer": "Doctor Promotional Offer",
+  "@doctorPromotionalOffer": {
+    "description": "Promotional offer header"
+  },
+  "specialLaunchPricing": "Special launch pricing for early adopters",
+  "@specialLaunchPricing": {
+    "description": "Special pricing subtitle"
+  },
+  "limitedTimeOffer": "Limited Time Offer",
+  "@limitedTimeOffer": {
+    "description": "Limited time offer badge"
+  },
+  "subscribeNow": "Subscribe Now",
+  "@subscribeNow": {
+    "description": "Subscribe button text"
+  },
+  "selectAPlan": "Select a Plan",
+  "@selectAPlan": {
+    "description": "Select plan button text"
+  },
+  "popular": "POPULAR",
+  "@popular": {
+    "description": "Popular tier badge"
+  },
+  "patients": "patients",
+  "@patients": {
+    "description": "Patients count text"
+  },
+  "perMonth": "per month",
+  "@perMonth": {
+    "description": "Per month pricing text"
+  },
+  "confirmSubscription": "Confirm Subscription",
+  "@confirmSubscription": {
+    "description": "Subscription confirmation dialog title"
+  },
+  "youHaveSelected": "You have selected the {planName} plan:",
+  "@youHaveSelected": {
+    "description": "Plan selection confirmation text",
+    "placeholders": {
+      "planName": {
+        "type": "String"
+      }
+    }
+  },
+  "upToPatients": "• Up to {count} patients",
+  "@upToPatients": {
+    "description": "Patient count display",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pricingFormat": "• {currency} {price}/month",
+  "@pricingFormat": {
+    "description": "Pricing display format",
+    "placeholders": {
+      "currency": {
+        "type": "String"
+      },
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "promotionalOfferProceed": "This is a promotional offer. Do you want to proceed?",
+  "@promotionalOfferProceed": {
+    "description": "Promotional offer confirmation"
+  },
+  "confirm": "Confirm",
+  "@confirm": {
+    "description": "Confirm button text"
+  },
+  "subscriptionActivated": "Subscription Activated!",
+  "@subscriptionActivated": {
+    "description": "Subscription activation success title"
+  },
+  "planActivatedSuccess": "Your {planName} plan has been activated successfully!",
+  "@planActivatedSuccess": {
+    "description": "Plan activation success message",
+    "placeholders": {
+      "planName": {
+        "type": "String"
+      }
+    }
+  },
+  "canNowManagePatients": "You can now manage up to {count} patients.",
+  "@canNowManagePatients": {
+    "description": "Patient management confirmation",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "great": "Great!",
+  "@great": {
+    "description": "Great button text"
+  },
+  "subscription": "Subscription",
+  "@subscription": {
+    "description": "Subscription menu item"
+  },
+  "specialLaunchOffer": "Special Launch Offer!",
+  "@specialLaunchOffer": {
+    "description": "Special launch offer text"
+  },
+  "getPremiumFeatures": "Get premium features at promotional rates",
+  "@getPremiumFeatures": {
+    "description": "Premium features promotion text"
+  },
+  "viewPlans": "View Plans",
+  "@viewPlans": {
+    "description": "View plans button text"
+  },
+  "billing": "Billing",
+  "@billing": {
+    "description": "Billing menu item"
+  },
+  "createInvoice": "Create Invoice",
+  "@createInvoice": {
+    "description": "Create invoice screen title"
+  },
+  "myInvoices": "My Invoices",
+  "@myInvoices": {
+    "description": "Patient invoices screen title"
+  },
+  "selectPatient": "Select Patient",
+  "@selectPatient": {
+    "description": "Select patient label"
+  },
+  "billingItems": "Billing Items",
+  "@billingItems": {
+    "description": "Billing items section title"
+  },
+  "addItem": "Add Item",
+  "@addItem": {
+    "description": "Add item button text"
+  },
+  "noBillingItems": "No billing items added yet",
+  "@noBillingItems": {
+    "description": "No billing items message"
+  },
+  "taxSettings": "Tax Settings",
+  "@taxSettings": {
+    "description": "Tax settings section title"
+  },
+  "vatRate": "VAT Rate (%)",
+  "@vatRate": {
+    "description": "VAT rate field label"
+  },
+  "additionalTax": "Additional Tax (%)",
+  "@additionalTax": {
+    "description": "Additional tax field label"
+  },
+  "paymentTerms": "Payment Terms (Days)",
+  "@paymentTerms": {
+    "description": "Payment terms field label"
+  },
+  "notes": "Notes",
+  "@notes": {
+    "description": "Notes section title"
+  },
+  "invoiceSummary": "Invoice Summary",
+  "@invoiceSummary": {
+    "description": "Invoice summary section title"
+  },
+  "subtotal": "Subtotal",
+  "@subtotal": {
+    "description": "Subtotal label"
+  },
+  "vat": "VAT",
+  "@vat": {
+    "description": "VAT label"
+  },
+  "totalAmount": "Total Amount",
+  "@totalAmount": {
+    "description": "Total amount label"
+  },
+  "preview": "Preview",
+  "@preview": {
+    "description": "Preview button text"
+  },
+  "sendInvoice": "Send Invoice",
+  "@sendInvoice": {
+    "description": "Send invoice button text"
+  },
+  "addBillingItem": "Add Billing Item",
+  "@addBillingItem": {
+    "description": "Add billing item dialog title"
+  },
+  "description": "Description",
+  "@description": {
+    "description": "Description field label"
+  },
+  "type": "Type",
+  "@type": {
+    "description": "Type field label"
+  },
+  "quantity": "Quantity",
+  "@quantity": {
+    "description": "Quantity field label"
+  },
+  "unitPrice": "Unit Price (Rs)",
+  "@unitPrice": {
+    "description": "Unit price field label"
+  },
+  "category": "Category",
+  "@category": {
+    "description": "Category field label"
+  },
+  "pending": "Pending",
+  "@pending": {
+    "description": "Pending status"
+  },
+  "paid": "Paid",
+  "@paid": {
+    "description": "Paid status"
+  },
+  "overdue": "Overdue",
+  "@overdue": {
+    "description": "Overdue status"
+  },
+  "all": "All",
+  "@all": {
+    "description": "All filter option"
+  },
+  "total": "Total",
+  "@total": {
+    "description": "Total label"
+  },
+  "amount": "Amount",
+  "@amount": {
+    "description": "Amount label"
+  },
+  "dueDate": "Due Date",
+  "@dueDate": {
+    "description": "Due date label"
+  },
+  "viewDetails": "View Details",
+  "@viewDetails": {
+    "description": "View details button text"
+  },
+  "markPaid": "Mark Paid",
+  "@markPaid": {
+    "description": "Mark paid button text"
+  },
+  "markAsPaid": "Mark as Paid",
+  "@markAsPaid": {
+    "description": "Mark as paid dialog title"
+  },
+  "paymentMethod": "Payment Method",
+  "@paymentMethod": {
+    "description": "Payment method label"
+  },
+  "paymentReference": "Payment Reference (Optional)",
+  "@paymentReference": {
+    "description": "Payment reference field label"
+  },
+  "noInvoicesFound": "No invoices found",
+  "@noInvoicesFound": {
+    "description": "No invoices message"
+  },
+  "invoiceNumber": "Invoice Number",
+  "@invoiceNumber": {
+    "description": "Invoice number label"
+  },
+  "doctor": "Doctor",
+  "@doctor": {
+    "description": "Doctor label"
+  },
+  "date": "Date",
+  "@date": {
+    "description": "Date label"
+  },
+  "status": "Status",
+  "@status": {
+    "description": "Status label"
+  },
+  "items": "Items",
+  "@items": {
+    "description": "Items label"
+  }
+}

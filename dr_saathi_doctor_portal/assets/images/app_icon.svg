@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Dr. Saathi — DS Merged Monogram
+  Original design, SVG primitives only. No third-party assets. Copyright-free.
+  Style: rounded-square tile, merged S+D letterforms, mint-cyan on navy, warm glow join.
+-->
+<svg width="1024" height="1024" viewBox="0 0 1024 1024"
+     xmlns="http://www.w3.org/2000/svg">
+  <defs>
+
+    <!-- ── Tile background: flat deep navy with subtle radial lift ── -->
+    <radialGradient id="tileLift" cx="512" cy="400" r="540"
+                    gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#1e4d78"/>
+      <stop offset="55%"  stop-color="#163e62"/>
+      <stop offset="100%" stop-color="#0e2a46"/>
+    </radialGradient>
+
+    <!-- ── Monogram fill: mint-to-teal gradient, top→bottom ── -->
+    <linearGradient id="markFill" x1="0" y1="220" x2="0" y2="800"
+                    gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#7fe8c8"/>
+      <stop offset="50%"  stop-color="#52d4b4"/>
+      <stop offset="100%" stop-color="#30b898"/>
+    </linearGradient>
+
+    <!-- ── Golden warm glow at the shared vertical seam ── -->
+    <radialGradient id="seam" cx="512" cy="512" r="120"
+                    gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#ffd060" stop-opacity="0.90"/>
+      <stop offset="40%"  stop-color="#ffaa20" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ff8800" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Soft inner shadow at tile edges -->
+    <filter id="innerShadow" x="-5%" y="-5%" width="110%" height="110%"
+            color-interpolation-filters="sRGB">
+      <feFlood flood-color="#000000" flood-opacity="0.35" result="flood"/>
+      <feComposite in="flood"   in2="SourceGraphic" operator="in"  result="shadow"/>
+      <feGaussianBlur in="shadow" stdDeviation="28"              result="blur"/>
+      <feComposite   in="blur"   in2="SourceGraphic" operator="over"/>
+    </filter>
+
+    <!-- Subtle drop-shadow on the mark itself -->
+    <filter id="markShadow" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14"
+                    flood-color="#000d20" flood-opacity="0.55"/>
+    </filter>
+
+    <!-- Warm glow blur for the seam overlay -->
+    <filter id="seamGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+
+    <!-- Clip to rounded-square tile -->
+    <clipPath id="tileClip">
+      <rect x="60" y="60" width="904" height="904" rx="200" ry="200"/>
+    </clipPath>
+
+  </defs>
+
+  <!-- ══════════════════════════════════════
+       TILE BACKGROUND
+       ══════════════════════════════════════ -->
+  <rect width="1024" height="1024" fill="white"/>
+
+  <g clip-path="url(#tileClip)">
+
+    <!-- Navy background -->
+    <rect x="60" y="60" width="904" height="904" fill="url(#tileLift)"/>
+
+    <!-- Inner-edge darkening (3-D tile feel) -->
+    <rect x="60" y="60" width="904" height="904" rx="200" ry="200"
+          fill="none" stroke="#000d20" stroke-width="80" opacity="0.28"/>
+
+
+    <!-- ══════════════════════════════════════
+         DS MERGED MONOGRAM
+         ══════════════════════════════════════
+         Concept
+         ───────
+         Both letters are drawn as FILLED shapes (even-odd rule for counters).
+         They share a common vertical seam at x = 512.
+
+         S  (LEFT half, x = 200–512)
+           Outer boundary: rounded square S-shape
+             · two opposing arcs sharing x=512 as the right edge
+           Counter (hole): smaller interior S-shape
+           The S's "spine" runs along x = 200–512.
+
+         D  (RIGHT half, x = 512–810)
+           Outer: left bar at x=512, arch curves right to ~x=780
+           Counter: inner arch from same bar inset
+
+         Both share x=512 — letters appear merged/interlocked.
+         ══════════════════════════════════════ -->
+
+    <g filter="url(#markShadow)">
+
+      <!-- ── S letterform (left) ─────────────────────────────────
+           Outer S: from (512,220) anticlockwise, two bumps left.
+           Upper bump: arc centre ≈ (356,360), r≈156, curves left
+           Lower bump: arc centre ≈ (356,664), r≈156, curves right
+           Inner S counter: same but inset ~60px.
+      ── -->
+      <path fill="url(#markFill)" fill-rule="evenodd"
+        d="
+          M 512,220
+          L 330,220
+          Q 200,220 200,350
+          Q 200,460 330,480
+          L 460,500
+          Q 512,510 512,512
+          Q 512,514 460,524
+          L 330,544
+          Q 200,564 200,674
+          Q 200,804 330,804
+          L 512,804
+          L 512,720
+          L 340,720
+          Q 292,720 292,674
+          Q 292,632 340,624
+          L 470,604
+          Q 512,596 512,512
+          Q 512,428 470,420
+          L 340,400
+          Q 292,392 292,350
+          Q 292,304 340,304
+          L 512,304
+          Z
+        "/>
+
+
+      <!-- ── D letterform (right) ────────────────────────────────
+           Outer D: left bar from (512,220) to (512,804),
+                    arch curves right.
+           rx=250, ry=292 → gently rounded rectangle feel.
+           Inner counter: inset ~60px from bar and arch.
+      ── -->
+      <path fill="url(#markFill)" fill-rule="evenodd"
+        d="
+          M 512,220
+          L 572,220
+          Q 810,220 810,512
+          Q 810,804 572,804
+          L 512,804
+          L 512,720
+          L 568,720
+          Q 718,720 718,512
+          Q 718,304 568,304
+          L 512,304
+          Z
+        "/>
+
+    </g>
+
+
+    <!-- ══════════════════════════════════════
+         WARM GLOW AT THE SHARED SEAM (x=512)
+         A vertical warm-gold radiant strip where
+         the two letterforms meet, giving depth.
+         ══════════════════════════════════════ -->
+    <!-- Blurred warm column -->
+    <rect x="486" y="200" width="52" height="624"
+          fill="#ffaa30" opacity="0.70"
+          filter="url(#seamGlow)"/>
+
+    <!-- Hard bright line at exact seam -->
+    <line x1="512" y1="220" x2="512" y2="804"
+          stroke="#ffe090" stroke-width="5" opacity="0.85"/>
+
+
+    <!-- Tile inner-edge shadow overlay -->
+    <rect x="60" y="60" width="904" height="904" rx="200" ry="200"
+          fill="url(#tileLift)" filter="url(#innerShadow)"
+          opacity="0.0"/>
+
+  </g>
+
+  <!-- ══════════════════════════════════════
+       TILE OUTER SHADOW & RIM
+       ══════════════════════════════════════ -->
+  <!-- Rim highlight (top-left catch-light) -->
+  <rect x="60" y="60" width="904" height="904" rx="200" ry="200"
+        fill="none" stroke="white" stroke-width="3" opacity="0.12"/>
+
+</svg>

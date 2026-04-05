@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: dr-saathi-api
+    runtime: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3001
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_REFRESH_SECRET
+        generateValue: true
+      - key: DATABASE_URL
+        fromDatabase:
+          name: dr-saathi-db
+          property: connectionString
+
+databases:
+  - name: dr-saathi-db
+    plan: free
+    databaseName: dr_saathi
+    user: dr_saathi_user

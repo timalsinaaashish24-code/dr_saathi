@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "172061406796",
+    "project_id": "dr-saathi",
+    "storage_bucket": "dr-saathi.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:172061406796:android:d1957c2268df99272a26e9",
+        "android_client_info": {
+          "package_name": "com.drsaathi.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIEzVDmV8ujyT7wrivt7rqELXmMNeoIHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

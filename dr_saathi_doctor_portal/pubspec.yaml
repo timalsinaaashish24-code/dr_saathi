@@ -1,0 +1,105 @@
+name: dr_saathi_doctor_portal
+description: "Dr. Saathi - Doctor Portal for Healthcare Professionals"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  
+  cupertino_icons: ^1.0.8
+  
+  # Database
+  sqflite: ^2.4.1
+  sqflite_common_ffi: ^2.3.3
+  sqflite_common_ffi_web: ^1.0.1+1
+  path: ^1.8.3
+  uuid: ^4.0.0
+  
+  # State & Storage
+  shared_preferences: ^2.2.2
+  connectivity_plus: ^7.0.0
+  
+  # Utilities
+  intl: ^0.20.2
+  form_validator: ^2.1.1
+  table_calendar: ^3.1.2
+  
+  # PDF generation
+  pdf: ^3.10.0
+  printing: ^5.11.0
+  
+  # Shared API client
+  dr_saathi_api:
+    path: ../shared_api_client
+  path_provider: ^2.1.1
+  share_plus: ^12.0.1
+  
+  # Image picker
+  image_picker: ^1.0.7
+  
+  # Security
+  crypto: ^3.0.3
+  
+  # Networking
+  http: ^1.1.0
+  dio: ^5.4.0
+  
+  # SMS and notifications
+  url_launcher: ^6.1.14
+  permission_handler: ^12.0.1
+  flutter_local_notifications: ^17.2.3
+  workmanager: ^0.9.0+2
+  
+  # Payment
+  webview_flutter: ^4.2.2
+  qr_flutter: ^4.1.0
+  encrypt: ^5.0.1
+  
+  # Location
+  geolocator: ^14.0.2
+  geocoding: ^4.0.0
+  google_maps_flutter: ^2.5.0
+  
+  # Firebase
+  firebase_core: ^4.4.0
+  firebase_analytics: ^12.1.1
+  
+  # Package info
+  package_info_plus: ^9.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter:
+  uses-material-design: true
+  generate: true
+  
+  assets:
+    - assets/images/
+    - assets/images/payment_logos/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/dr_saathi_icon.png"
+  remove_alpha_ios: true
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/images/dr_saathi_icon.png"
+  web:
+    generate: true
+    image_path: "assets/images/dr_saathi_icon.png"
+    background_color: "#ffffff"
+    theme_color: "#1565C0"
+  macos:
+    generate: true
+    image_path: "assets/images/dr_saathi_icon.png"

@@ -1,0 +1,11 @@
+name: dr_saathi_api
+description: Shared API client for Dr. Saathi apps (Patient, Doctor Portal, Admin)
+version: 1.0.0
+publish_to: 'none'
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  http: ^1.2.0
+  shared_preferences: ^2.5.0
