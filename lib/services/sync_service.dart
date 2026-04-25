@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:connectivity_plus/connectivity_plus.dart';
+import 'package:dr_saathi_api/dr_saathi_api.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite/sqflite.dart';
@@ -9,7 +10,9 @@ import 'database_service.dart';
 
 class SyncService {
   static final SyncService _instance = SyncService._internal();
-  static const String _baseUrl = 'https://api.drsaathi.com/v1'; // Dr. Saathi API endpoint
+  // Sync endpoint resolved via shared ApiConfig (defaults to /api/v1).
+  // Call ApiConfig.useProduction() / useDevelopment() at app startup to switch.
+  static String get _baseUrl => ApiConfig.apiUrl;
   static const String _syncStatusKey = 'last_sync_timestamp';
   static const String _offlineModeKey = 'offline_mode';
   
@@ -89,7 +92,6 @@ class SyncService {
       
       return true;
     } catch (e) {
-      print('Sync error: $e');
       onSyncError?.call('Sync failed: $e');
       onSyncStatusChanged?.call('Sync failed');
       return false;
@@ -113,7 +115,6 @@ class SyncService {
       
       return response.statusCode == 200 || response.statusCode == 201;
     } catch (e) {
-      print('Error syncing patient ${patient.id}: $e');
       return false;
     }
   }
@@ -135,7 +136,6 @@ class SyncService {
           return false;
       }
     } catch (e) {
-      print('Error processing sync queue item: $e');
       return false;
     }
   }
@@ -163,7 +163,6 @@ class SyncService {
       
       return response.statusCode == 200 || response.statusCode == 201;
     } catch (e) {
-      print('Error syncing patient $patientId: $e');
       return false;
     }
   }
@@ -180,7 +179,6 @@ class SyncService {
       
       return response.statusCode == 200 || response.statusCode == 204;
     } catch (e) {
-      print('Error deleting patient $patientId: $e');
       return false;
     }
   }
@@ -202,7 +200,6 @@ class SyncService {
       
       return [];
     } catch (e) {
-      print('Error downloading patients: $e');
       return [];
     }
   }
@@ -236,7 +233,6 @@ class SyncService {
       await _updateLastSyncTimestamp();
       return true;
     } catch (e) {
-      print('Full sync error: $e');
       return false;
     }
   }
@@ -327,7 +323,6 @@ class SyncService {
       
       return true;
     } catch (e) {
-      print('Error syncing prescription deliveries: $e');
       return false;
     }
   }
@@ -346,7 +341,6 @@ class SyncService {
       
       return response.statusCode == 200 || response.statusCode == 201;
     } catch (e) {
-      print('Error syncing delivery ${delivery['id']}: $e');
       return false;
     }
   }
@@ -376,7 +370,6 @@ class SyncService {
       
       return true;
     } catch (e) {
-      print('Error syncing patients: $e');
       return false;
     }
   }
@@ -405,7 +398,6 @@ class SyncService {
       
       return true;
     } catch (e) {
-      print('Error syncing prescriptions: $e');
       return false;
     }
   }
@@ -424,7 +416,6 @@ class SyncService {
       
       return response.statusCode == 200 || response.statusCode == 201;
     } catch (e) {
-      print('Error syncing prescription ${prescription['id']}: $e');
       return false;
     }
   }
@@ -440,7 +431,6 @@ class SyncService {
       
       return true;
     } catch (e) {
-      print('Error syncing healthcare providers: $e');
       return false;
     }
   }
@@ -470,7 +460,6 @@ class SyncService {
       
       return true;
     } catch (e) {
-      print('Error downloading doctors: $e');
       return false;
     }
   }
@@ -500,7 +489,6 @@ class SyncService {
       
       return true;
     } catch (e) {
-      print('Error downloading pharmacies: $e');
       return false;
     }
   }

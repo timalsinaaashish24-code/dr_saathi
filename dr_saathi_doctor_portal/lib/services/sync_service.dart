@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:connectivity_plus/connectivity_plus.dart';
+import 'package:dr_saathi_api/dr_saathi_api.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite/sqflite.dart';
@@ -12,7 +13,9 @@ import 'database_service.dart';
 
 class SyncService {
   static final SyncService _instance = SyncService._internal();
-  static const String _baseUrl = 'https://api.drsaathi.com/v1'; // Dr. Saathi API endpoint
+  // Sync endpoint resolved via shared ApiConfig (defaults to /api/v1).
+  // Call ApiConfig.useProduction() / useDevelopment() at app startup to switch.
+  static String get _baseUrl => ApiConfig.apiUrl;
   static const String _syncStatusKey = 'last_sync_timestamp';
   static const String _offlineModeKey = 'offline_mode';
   

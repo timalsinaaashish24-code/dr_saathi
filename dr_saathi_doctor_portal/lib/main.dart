@@ -1,3 +1,4 @@
+import 'package:dr_saathi_api/dr_saathi_api.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -18,7 +19,12 @@ import 'services/refund_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  
+
+  // Point ApiConfig at production for release builds; debug builds keep localhost.
+  if (kReleaseMode) {
+    ApiConfig.useProduction();
+  }
+
   // Initialize Firebase (optional - requires firebase_options.dart)
   try {
     await Firebase.initializeApp();

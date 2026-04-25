@@ -13,6 +13,7 @@
  * substitute for professional medical advice, diagnosis, or treatment.
  */
 
+import 'package:dr_saathi_api/dr_saathi_api.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -27,7 +28,6 @@ import 'services/sms_service.dart';
 import 'services/symptom_checker_service.dart';
 import 'services/pharmacy_service.dart';
 import 'services/language_service.dart';
-import 'services/database_service.dart';
 import 'services/air_quality_service.dart';
 import 'package:sqflite_common_ffi_web/sqflite_ffi_web.dart';
 import 'package:sqflite/sqflite.dart';
@@ -50,18 +50,20 @@ import 'screens/health_insurance_info.dart';
 import 'screens/nipah_virus_alert_screen.dart';
 import 'screens/payment_demo_home.dart';
 import 'screens/nutritional_advice_screen.dart';
-import 'sample_data_creator.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  
-  // Initialize Firebase (requires running 'flutterfire configure' first)
+
+  // Point ApiConfig at production for release builds; debug builds keep localhost.
+  if (kReleaseMode) {
+    ApiConfig.useProduction();
+  }
+
+  // Initialize Firebase
   try {
     await Firebase.initializeApp();
-    print('Firebase initialized successfully');
   } catch (e) {
-    print('Firebase initialization failed: $e');
-    print('Run "flutterfire configure" to set up Firebase');
+    // Firebase initialization failed - ensure 'flutterfire configure' has been run
   }
   
   // Initialize web database factory if running on web
@@ -71,7 +73,7 @@ void main() async {
       // Initialize the web database factory
       databaseFactory = databaseFactoryFfiWeb;
     } catch (e) {
-      print('Warning: Web database initialization failed: $e');
+      // Web database initialization failed - app will continue without local DB on web
     }
   }
   
@@ -92,13 +94,8 @@ void main() async {
     final pharmacyService = PharmacyService();
     await pharmacyService.initialize();
     
-    // Initialize Database service and add sample patients for testing
-    final databaseService = DatabaseService();
-    await databaseService.addSamplePatients();
-    print('Sample patients added to database for testing');
   } catch (e) {
-    print('Warning: Service initialization failed: $e');
-    // Continue with app startup even if services fail to initialize
+    // Service initialization failed - app will continue with degraded functionality
   }
   
   runApp(const MyApp());
@@ -334,7 +331,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
   int _selectedIndex = 0;
   String? _profileImagePath;
   String _userName = 'Dr. Saathi User';
@@ -349,17 +345,6 @@ class _MyHomePageState extends State<MyHomePage> {
   bool _isNepali(BuildContext context) {
     final locale = Localizations.localeOf(context);
     return locale.languageCode == 'ne';
-  }
-
-  void _incrementCounter() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
-    });
   }
 
   void _onItemTapped(int index) {
@@ -408,7 +393,6 @@ class _MyHomePageState extends State<MyHomePage> {
         _isLoadingAQI = false;
       });
     } catch (e) {
-      print('Error loading air quality data: $e');
       setState(() {
         _isLoadingAQI = false;
       });
@@ -685,14 +669,6 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
           
-          const SizedBox(height: 12),
-          
-          // Development counter (can be removed in production)
-          const Text('Development counter:'),
-          Text(
-            '$_counter',
-            style: Theme.of(context).textTheme.headlineMedium,
-          ),
         ],
           ),
         ),
@@ -1489,111 +1465,6 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  void _showLoginDialog() {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: const Text('Login'),
-          content: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              const TextField(
-                decoration: InputDecoration(
-                  labelText: 'Email',
-                  border: OutlineInputBorder(),
-                ),
-              ),
-              const SizedBox(height: 16),
-              const TextField(
-                decoration: InputDecoration(
-                  labelText: 'Password',
-                  border: OutlineInputBorder(),
-                ),
-                obscureText: true,
-              ),
-              const SizedBox(height: 16),
-              SizedBox(
-                width: double.infinity,
-                child: ElevatedButton(
-                  onPressed: () {
-                    Navigator.pop(context);
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(content: Text('Login successful!')),
-                    );
-                  },
-                  child: const Text('Login'),
-                ),
-              ),
-            ],
-          ),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(context),
-              child: const Text('Cancel'),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
-  void _showCreateAccountDialog() {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: const Text('Create Account'),
-          content: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              const TextField(
-                decoration: InputDecoration(
-                  labelText: 'Full Name',
-                  border: OutlineInputBorder(),
-                ),
-              ),
-              const SizedBox(height: 16),
-              const TextField(
-                decoration: InputDecoration(
-                  labelText: 'Email',
-                  border: OutlineInputBorder(),
-                ),
-              ),
-              const SizedBox(height: 16),
-              const TextField(
-                decoration: InputDecoration(
-                  labelText: 'Password',
-                  border: OutlineInputBorder(),
-                ),
-                obscureText: true,
-              ),
-              const SizedBox(height: 16),
-              SizedBox(
-                width: double.infinity,
-                child: ElevatedButton(
-                  onPressed: () {
-                    Navigator.pop(context);
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(content: Text('Account created successfully!')),
-                    );
-                  },
-                  child: const Text('Create Account'),
-                ),
-              ),
-            ],
-          ),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(context),
-              child: const Text('Cancel'),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
   void _showResourcesDialog() {
     final isNepali = _isNepali(context);
     showDialog(
@@ -2188,7 +2059,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ListTile(
                 leading: const Icon(Icons.phone),
                 title: const Text('Phone Support'),
-                subtitle: const Text('+1 (555) 123-4567'),
+                subtitle: const Text('+977-1-XXXXXXXX'), // TODO: Replace with actual support number
                 onTap: () {
                   Navigator.pop(context);
                   ScaffoldMessenger.of(context).showSnackBar(
@@ -2257,19 +2128,6 @@ class _MyHomePageState extends State<MyHomePage> {
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
       ),
-      floatingActionButton: _selectedIndex == 0 ? FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Dr. Saathi',
-        backgroundColor: Colors.lightBlue[600],
-        child: ClipOval(
-          child: Image.asset(
-            'assets/images/dr_saathi_icon.png',
-            width: 40,
-            height: 40,
-            fit: BoxFit.cover,
-          ),
-        ),
-      ) : null,
     );
   }
 }

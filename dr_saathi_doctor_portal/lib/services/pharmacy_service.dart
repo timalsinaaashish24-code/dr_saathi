@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:dr_saathi_api/dr_saathi_api.dart';
 import 'package:http/http.dart' as http;
 import 'package:uuid/uuid.dart';
 import '../models/pharmacy.dart';
@@ -8,7 +9,8 @@ import 'database_service.dart';
 import 'sync_service.dart';
 
 class PharmacyService {
-  static const String _baseUrl = 'https://api.drsaathi.com/nepal/pharmacies';
+  // Pharmacies endpoint resolved via shared ApiConfig (defaults to /api/v1/pharmacies).
+  static String get _baseUrl => '${ApiConfig.apiUrl}/pharmacies';
   final DatabaseService _databaseService = DatabaseService();
   final SyncService _syncService = SyncService();
   final Uuid _uuid = const Uuid();
